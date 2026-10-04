@@ -1,0 +1,181 @@
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #A0ACAD;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    margin: 0 auto;
+    max-width: 1500px;
+    min-height: 0;
+    height: auto;
+    width: 100%;
+    
+    background-color: #355691;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+
+    color: white;
+    background-color: #5F5AA2;
+    box-sizing: border-box;
+    width: 100%;
+}
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    margin: 100px auto 0;
+    margin-bottom: 100px;
+    padding: 30px;
+    height: 800px;
+    width: 600px;
+    min-width: 400px;
+    border-radius: 20px;
+    border: 10px solid #413F54;
+    
+    background-color: #30292F;
+}
+#visor{
+    display: flex;
+    justify-self: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+    font-size: 40px;
+
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    margin: 30px 0 auto;
+    border-radius: 15px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#numvisor{
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+
+    white-space: nowrap;
+    overflow-x: auto;
+
+    width: 100%;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+#botoes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 400px;
+    width: 400px;
+    height: 800px;
+    gap: 15px;
+    margin: 20px auto 0;
+
+    box-sizing: border-box;
+}
+button{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    
+    cursor: pointer;
+
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transition: 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+
+    background-color: #5F5AA2;
+    color: white;
+}
+button:active{
+    transform: scale(0.95);
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+
+    color: white;
+    background-color: #5F5AA2;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #calculadora {
+    margin: 100px auto 0;
+    margin-bottom: 100px;
+    padding: 20px;
+    height: auto;
+    width: 95%;
+    min-width: 0px;
+}
+#visor{
+    font-size: 40px;
+
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    margin: 30px 0 auto;
+}
+#numvisor{
+    white-space: nowrap;
+    overflow-x: auto;
+
+    width: 100%;
+    margin: 0;
+}
+#botoes{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin: 20px;
+
+    box-sizing: border-box;
+}
+button{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+}

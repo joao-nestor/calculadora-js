@@ -50,7 +50,7 @@ Algumas funcionalidades que podem ser adicionadas futuramente:
 
 * Preview
 
-<img src="imagens/computador.png" width="400">
+<img src="imagens/computador.png" width="600">
 
 <img src="imagens/celular.jpeg" width="400">
 

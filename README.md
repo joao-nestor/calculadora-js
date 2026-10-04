@@ -52,7 +52,7 @@ Algumas funcionalidades que podem ser adicionadas futuramente:
 
 <img src="imagens/computador.png" width="400">
 
-<img src="imagens/celular.png" width="400">
+<img src="imagens/celular.jpeg" width="400">
 
 * Autor
 

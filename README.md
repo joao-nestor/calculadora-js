@@ -50,9 +50,9 @@ Algumas funcionalidades que podem ser adicionadas futuramente:
 
 * Preview
 
-![Calculadora no computador](imagens/computador.png)
+<img src="imagens/computador.png" width="400">
 
-![Calculadora no celular](imagens/celular.jpeg)
+<img src="imagens/celular.png" width="400">
 
 * Autor
 

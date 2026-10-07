@@ -13,8 +13,8 @@ botoes.forEach(function(botao) {
 
     if (botao.innerText === '=' && visor.innerText === '0') { // Se clicar igual e tiver 0 no visor, continuará 0
         visor.innerText = '0';
-    } else if (botao.innerText === '=' && visor.innerText !== '0') {
-        visor.innerText = res;
+    } else if (botao.innerText === '=' && visor.innerText !== '0' && num2 === '' && res === '') { // Se clicar igual e visor não for 0, mostrará o resultado.
+        visor.innerText = num1;
     }
      else {
         if (!isNaN(Number(botao.innerText))) { // Verifica se o botão apertado NÃO é um número.
@@ -29,11 +29,11 @@ botoes.forEach(function(botao) {
         num1 = res;
         operacao = botao.innerText;
         num2 = '';
-        visor.innerText = '';
+        visor.innerText = '0';
     } else if (isNaN(Number(botao.innerText)) && (botao.innerText === '+' || botao.innerText === '−' || botao.innerText === '×' || botao.innerText === '÷')) { // Detecta se é um operador e qual é.
         operacao = botao.innerText;
         visor.innerText = '0';
-        if (num2 !== '' && operacao === '+' || operacao === '−' || operacao === '×' || operacao === '÷') { // Permite fazer operações sucessivamente.
+        if (num2 !== '' && (operacao === '+' || operacao === '−' || operacao === '×' || operacao === '÷')) { // Permite fazer operações sucessivamente.
             num1 = res;
             num2 = '';
         }
